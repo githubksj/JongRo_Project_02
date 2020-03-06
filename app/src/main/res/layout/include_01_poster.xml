@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/poster_image_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_1"
+            android:src="@drawable/image11"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/poster_image_1"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_1"
+            android:layout_marginLeft="5dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="bottom"
+                android:paddingTop="50dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/poster_tv_1"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:text="군도"/>
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/poster_image_2"
+                    android:src="@drawable/ic_15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="bottom"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_tv_2"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="2014.07.23 개봉"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_tv_3"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="액션 / 137분"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+
+            <!-- ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_image2"
+                    android:background="@drawable/selector_like"
+                    android:layout_gravity="left"/ -->
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_image2"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_like"
+                    android:background="@drawable/selector_like"
+                    android:layout_gravity="left"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_tv_4"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:layout_marginLeft="8dp"/>
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_image3"
+                    android:src="@drawable/selector_dislike"
+                    android:layout_marginLeft="16dp"/>
+            <!--    android:src="@drawable/selector_dislike" -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_1_2_tv_5"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="200dp"
+            android:id="@+id/guideline_1"/>
+</android.support.constraint.ConstraintLayout>
